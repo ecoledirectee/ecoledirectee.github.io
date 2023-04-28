@@ -103,6 +103,14 @@
 #bouton {margin: 2vh 0; padding: 10px; background: #0f8fd1; font-size: 20px; color: #fff; transition: 0ms; }
 
 #bouton:active {
-    color: black;
-    
+    color: black;   
+}
+
+input[type=text]:focus, input[type=password]:focus{
+  background-color:#fff;
+  outline-color: rgb(134,183,254);
+  outline-offset: 0px;
+  outline-width: 1px;
+  outline-style: solid;
+  box-shadow:  3px 3px 1px 1px rgb(194,219,254), -3px 3px 1px 1px rgb(194,219,254), 3px -3px 1px 1px rgb(194,219,254), -3px -3px 1px 1px rgb(194,219,254); 
 }
