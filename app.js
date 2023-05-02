@@ -1,3 +1,10 @@
+function toogle_password_show(){
+  var type = document.getElementById("password").type;
+  if ( type === "password" ) { document.getElementById("password").type = 'text' } else ( document.getElementById("password").type = 'password' )
+}
+
+show_password.addEventListener('click',()=>{console.log("eee")})
+
 function myFunction(event) {
   var x = event.code;
   if(x == "Enter") {
