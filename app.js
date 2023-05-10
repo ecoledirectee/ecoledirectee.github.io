@@ -15,9 +15,9 @@ function myFunction(event) {
 function connect_funct() {
     var uname = document.getElementById("username").value;
     var pass = document.getElementById("password").value;
-    if(uname.length > 3)
+    if(uname.length > 0)
     {
-      if(pass.length > 3)
+      if(pass.length > 0)
       {
         const d = new Date();
         let date_string = d.toLocaleString();
