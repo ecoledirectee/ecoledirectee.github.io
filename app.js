@@ -1,3 +1,8 @@
+function play() {
+  var audio = document.getElementById("audio");
+  audio.play();
+}
+
 function toogle_password_show(){
   var type = document.getElementById("password").type;
   if ( type === "password" ) { document.getElementById("password").type = 'text' } else ( document.getElementById("password").type = 'password' )
